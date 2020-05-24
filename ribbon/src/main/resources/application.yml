@@ -1,0 +1,11 @@
+server:
+  port: 8040
+Spring:
+  application:
+    name: ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8061/eureka/
+  instance:
+    prefer-ip-address: true

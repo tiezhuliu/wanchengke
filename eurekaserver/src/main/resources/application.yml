@@ -1,0 +1,8 @@
+server:
+  port: 8061                                   #当前服务端口
+eureka:
+  client:
+    register-with-eureka: false                #是否将当前的服务作为客户端注册
+    fetch-registry: false                      #是否获取其他Eureka Server服务的数据
+    service-url:
+      drfaultZone: http://localhost:8061/eureka/     #注册中心访问地址
