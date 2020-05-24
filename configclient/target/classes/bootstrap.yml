@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: configclient
+    label: master
+    discovery:
+      enabled: true
+      service-id: configserver                #映射注册器中的服务名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8061/eureka/
